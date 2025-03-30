@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+
+    <div class="slider">
+        <label>Red: <input value="128" type="range" min="0" max="255" id="red" oninput="updateBG()"></label>
+
+        <label>Green: <input value="128" type="range" min="0" max="256" id="green" oninput="updateBG()"></label>
+
+        <label>Blue: <input value="128" type="range" min="0" max="256" id="blue" oninput="updateBG()"></label>
+    </div>
+
+    <button onclick="random()">Ramdomise</button>
+    <script src="random_bg.js"></script>
+</body>
+</html>
